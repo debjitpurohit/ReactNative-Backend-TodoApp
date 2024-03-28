@@ -1,6 +1,6 @@
 
 export const sendToken = (user, res, message, statusCode = 200) => {
-  const token = user.getJWTTOKEN()
+  const token = user.getJWTTOKEN();
   const options={
         httpOnly: true,
         expires: new Date(
